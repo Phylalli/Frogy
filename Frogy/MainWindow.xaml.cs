@@ -56,7 +56,7 @@ namespace Frogy
                 StartInfo =
                 {
                     FileName = serviceFilePath,
-                    Arguments = "C:\\Users\\yaione\\AppData\\Roaming\\Frogy cdaed248e5e941ef91c7d95a67f982af"
+                    Arguments = "C:\\Users\\yaione\\AppData\\Roaming\\Frogy cdaed248e5e941ef91c7d95a67f982af 60"
                 }
             };
 

@@ -22,6 +22,7 @@ namespace FrogyCore
 
         private static string workingDirectory;
         private static string guid;
+        private static int saveCycle;
 
         private static string storagePath
         {
@@ -50,6 +51,7 @@ namespace FrogyCore
         {
             workingDirectory = args[0];
             guid = args[1];
+            saveCycle = int.Parse(args[2]);
 
             //Update device name
             DataHelper.WriteFile(storagePath, "device.config", Dns.GetHostName());
@@ -173,7 +175,7 @@ namespace FrogyCore
                 }
             }
 
-            if (counter >= 60)
+            if (counter >= saveCycle)
             {
                 counter = 0;
                 save(today);
