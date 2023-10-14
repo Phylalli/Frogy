@@ -1,2 +1,3 @@
 # Frogy
-A rebuild of Frogy@dimojang.
+
+Screen Time for Windows.
